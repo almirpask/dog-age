@@ -40,7 +40,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCS-Bu-Igm">
                                 <rect key="frame" x="126" y="359" width="122" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Descobrir a idade"/>
+                                <color key="backgroundColor" red="0.87710492226994818" green="0.63740432398108282" blue="0.11501115106083111" alpha="0.61894806339999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Descobrir a idade">
+                                    <color key="titleColor" red="0.34532869170984459" green="0.31316278870334968" blue="0.16353001921795371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="discoverAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TNG-Ao-oIQ"/>
                                 </connections>

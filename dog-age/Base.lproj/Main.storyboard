@@ -18,29 +18,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cachorro.png" translatesAutoresizingMaskIntoConstraints="NO" id="ulv-uC-vCq">
-                                <rect key="frame" x="31" y="49" width="312" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cachorro.png" translatesAutoresizingMaskIntoConstraints="NO" id="ulv-uC-vCq">
+                                <rect key="frame" x="31.5" y="49" width="312" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="1qJ-q9-3xv"/>
+                                    <constraint firstAttribute="width" constant="312" id="dfN-6V-vaA"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Digite a idade do seu cachorro para descobrir em anos humanos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3i3-vL-4nA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite a idade do seu cachorro para descobrir em anos humanos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3i3-vL-4nA">
                                 <rect key="frame" x="16" y="214" width="343" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90327477331606221" green="0.73182112568991553" blue="0.24834323368173356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="RDV-oL-jUv"/>
+                                    <constraint firstAttribute="height" constant="48" id="vvy-Uc-yWy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" red="0.27776878238341973" green="0.22804417741500288" blue="0.078870362509752379" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a idade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y65-YW-2e6">
-                                <rect key="frame" x="134" y="304" width="106" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a idade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y65-YW-2e6">
+                                <rect key="frame" x="134.5" y="304" width="106" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HMm-ZD-A5f"/>
+                                    <constraint firstAttribute="width" constant="106" id="sDn-hq-ABi"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCS-Bu-Igm">
-                                <rect key="frame" x="126" y="359" width="122" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCS-Bu-Igm">
+                                <rect key="frame" x="126.5" y="359" width="122" height="30"/>
                                 <color key="backgroundColor" red="0.87710492226994818" green="0.63740432398108282" blue="0.11501115106083111" alpha="0.61894806339999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="Sbe-kB-8Q8"/>
+                                    <constraint firstAttribute="height" constant="30" id="Z6z-wu-q35"/>
+                                </constraints>
                                 <state key="normal" title="Descobrir a idade">
                                     <color key="titleColor" red="0.34532869170984459" green="0.31316278870334968" blue="0.16353001921795371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -48,15 +60,30 @@
                                     <action selector="discoverAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TNG-Ao-oIQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aad-Td-IgS">
-                                <rect key="frame" x="16" y="431" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aad-Td-IgS">
+                                <rect key="frame" x="16" y="431" width="343" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="QuM-Aj-63t"/>
+                                    <constraint firstAttribute="height" constant="21" id="ipM-8G-v4A"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.81263530529971872" blue="0.28406352957968928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="y65-YW-2e6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-14.5" id="3CZ-5Q-dwu"/>
+                            <constraint firstItem="3i3-vL-4nA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-95.5" id="88N-K2-1Ow"/>
+                            <constraint firstItem="ulv-uC-vCq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="97K-23-HpR"/>
+                            <constraint firstItem="3i3-vL-4nA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Abh-Zv-Of7"/>
+                            <constraint firstItem="LCS-Bu-Igm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="40.5" id="EFB-5Y-b2h"/>
+                            <constraint firstItem="Aad-Td-IgS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I2J-si-7Mo"/>
+                            <constraint firstItem="ulv-uC-vCq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-206" id="SNV-Ld-KwU"/>
+                            <constraint firstItem="LCS-Bu-Igm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bsO-so-au7"/>
+                            <constraint firstItem="y65-YW-2e6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iRf-e1-bjG"/>
+                            <constraint firstItem="Aad-Td-IgS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="108" id="vvA-1V-aqN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
